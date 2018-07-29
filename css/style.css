@@ -1,3 +1,20 @@
 body {
     text-align: center;
 }
+
+.gamesWonWrapper, .gamesLostWrapper {
+    font-size: 25px;
+}
+
+.gamesLostWrapper {
+    padding-left: 50px;
+}
+
+.resetGame {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.scoreBarWrapper {
+    padding-top: 35px;
+}
