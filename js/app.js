@@ -90,8 +90,8 @@ Player.prototype.update = function (dt) {
 };
 
 Player.prototype.setInitialCoordinates = function () {
-    player.y = 400;
-    player.x = 200;
+    this.y = 400;
+    this.x = 200;
 };
 
 //handles the movement of the player
@@ -102,7 +102,7 @@ Player.prototype.handleInput = function (dt) {
     //check if the water tile is reached
     if (dt === 'up' && this.y - verticalMove < 0) {
         //resets the player coordinates;
-        player.setInitialCoordinates();
+        this.setInitialCoordinates();
         gamesWon++;
         updateScoreBar(null, gamesWon);
         return;
@@ -113,7 +113,7 @@ Player.prototype.handleInput = function (dt) {
     ) {
         return;
     }
-    else
+    else {
         switch (dt) {
             case 'up': {
                 this.y -= verticalMove;
@@ -134,6 +134,7 @@ Player.prototype.handleInput = function (dt) {
                 break;
             }
         }
+    }
 
 };
 

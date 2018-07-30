@@ -5,7 +5,7 @@ Hello!
 This is a simple arcade game, where you need to move your character from the start to the "water" tiles.
 
 ## How to run the game:
-Just run the index.html file.
+Just use the index.html file.
 
 ## How to play the game:
 * You can control your character by using the arrow keys.
